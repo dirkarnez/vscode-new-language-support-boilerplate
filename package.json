@@ -1,0 +1,44 @@
+{
+	"name": "nrql-language",
+	"displayName": "New Relic Query Language",
+	"description": "Grammar for NRQL (New Relic Query Language)",
+	"version": "0.0.1",
+	"publisher": "joelalejandro",
+	"engines": {
+		"vscode": "^1.52.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/joelalejandro/vscode-nrql-language"
+	},
+	"contributes": {
+		"languages": [
+			{
+				"id": "nrql",
+				"aliases": [
+					"New Relic Query Language",
+					"nrql"
+				],
+				"extensions": [
+					".nrql"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "nrql",
+				"scopeName": "source.nrql",
+				"path": "./syntaxes/nrql.tmLanguage.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "db870fe7-9274-4827-9667-c247f098f2f4",
+		"publisherDisplayName": "Joel Alejandro Villarreal Bertoldi",
+		"publisherId": "0a3a1e08-331e-49cd-9fd4-7b47e68bdff3"
+	}
+}
